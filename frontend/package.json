@@ -1,0 +1,90 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.15",
+    "@react-pdf/renderer": "^3.1.9",
+    "@reduxjs/toolkit": "^1.8.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tinymce/tinymce-react": "^4.3.0",
+    "@toast-ui/react-image-editor": "^3.15.2",
+    "@uiw/react-textarea-code-editor": "^2.1.1",
+    "axios": "^1.1.3",
+    "bootstrap": "^5.2.2",
+    "chart.js": "^4.3.0",
+    "file-saver": "^2.0.5",
+    "jwt-decode": "^3.1.2",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-auth-kit": "^2.10.0",
+    "react-avatar": "^5.0.3",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-bootstrap": "^2.5.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-code-blocks": "^0.0.9-0",
+    "react-confirm": "^0.3.0-2",
+    "react-cssfx-loading": "^2.1.0",
+    "react-data-grid": "^7.0.0-beta.28",
+    "react-data-table-component": "^7.5.3",
+    "react-datatable-pagination": "^1.0.3",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "react-dropzone": "^14.2.3",
+    "react-hot-toast": "^2.4.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-modal": "^3.16.1",
+    "react-notifications": "^1.7.4",
+    "react-paginate": "^8.1.5",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "rsuite": "^5.22.0",
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
+  }
+}

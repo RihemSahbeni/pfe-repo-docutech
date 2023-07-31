@@ -1,0 +1,18 @@
+.elemnt-div{
+    border: 1px dashed rgb(0, 154, 174);
+    padding: 20px;
+}
+.dragablezone{
+    overflow-y: scroll;
+
+}
+.element-preview{
+    width: 210mm;
+        min-height: 297mm;
+        padding: 20mm;
+        margin: 10mm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
