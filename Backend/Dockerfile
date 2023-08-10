@@ -19,12 +19,9 @@ WORKDIR /var/www/html
 # Copy the project files to the working directory
 COPY . /var/www/html
 
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-# Install project dependencies
-RUN COMPOSER_ALLOW_SUPERUSER=1
-RUN composer  install --no-interaction --optimize-autoloader
+# Install Composer and project dependencies
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+    && COMPOSER_ALLOW_SUPERUSER=1 composer install --no-interaction --optimize-autoloader
 
 # Expose port 9000 for PHP-FPM
 EXPOSE 9000
