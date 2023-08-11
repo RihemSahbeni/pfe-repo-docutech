@@ -1,12 +1,11 @@
-version: '3.8'
+version: '3.7'
 
 services:
-  # Container MYSQL   
   database:
     image: mysql:8
     container_name: database
     ports:
-      - 3306:3306
+      - "3306:3306"
     environment:
       MYSQL_DATABASE: db_wevioo
       MYSQL_USER: root
@@ -17,7 +16,6 @@ services:
     networks:
       - dev
 
-  # Container PHPMYADMIN
   phpmyadmin:
     depends_on:
       - database
@@ -55,7 +53,7 @@ services:
     ports : 
       - "3000:3000" 
     volumes: 
-     - "./frontend/:/app"
+      - "./frontend/:/app"
     depends_on : 
       - backend
     networks:
@@ -69,11 +67,12 @@ services:
     ports : 
       - "5000:5000" 
     volumes: 
-     - "./filegenerator/:/app"
+      - "./filegenerator/:/app"
     depends_on : 
       - database
     networks:
       - dev
+
   nginx:
     build:
       context: ./nginx
